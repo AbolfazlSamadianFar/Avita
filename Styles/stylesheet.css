@@ -342,3 +342,68 @@ section#information {
   font-size: 20px;
   color: white;
 }
+
+/* section Four , comments section */
+
+section#comments{
+  border: 1px solid black;
+  min-width: 300px;
+  margin-bottom: 200px;
+  padding: 60px 0;
+}
+#comment-wrapper{
+  /* border: 1px solid red; */
+  min-height: 200px;
+  display: flex;
+}
+.comment{
+  border: 1px solid purple;
+  min-height: 100px;
+  flex-basis: 50%;
+  padding: 30px;
+}
+.coulmns{
+  display: flex;
+  justify-content: space-between;
+}
+.right-col{
+border: 1px solid green;
+}
+.right-col > img{
+  height: 110px;
+  border-radius: 50%;
+  /* border-right: 1px solid black; */
+  /* border-top: 1px solid black; */
+}
+.right-col > img::after{
+  content: "aaaaa";
+  width: 50px;
+  height: 22px;
+  display: block;
+  color: var(--main-color);
+  /* border-radius: 50%; */
+}
+.data-holder{
+  /* border: 1px solid brown; */
+  display: inline-block;
+  margin-right: 10px;
+}
+.data-holder > h3{
+font-size: 21px;
+}
+.data-holder > p{
+font-size: 13px;
+color: gray;
+}
+.star-holder{
+  display: flex;
+  justify-content: space-around;
+}
+.star-holder > i{
+  color: rgb(255, 183, 0);
+  margin-right: -5px;
+}
+.left-col{
+border: 1px solid green;
+}
+
