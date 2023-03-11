@@ -543,3 +543,68 @@ ul#category > li:hover {
   left: 10px;
   opacity: 1;
 }
+
+/* section Five , us-team section */
+
+section#us-team {
+  border: 1px solid black;
+  min-height: 300px;
+  margin-bottom: 200px;
+  padding: 60px 0;
+  padding-top: 150px;
+}
+#teacher-wrapper {
+  display: flex;
+  column-gap: 30px;
+}
+.teacher {
+  flex: 1;
+  background-color: rgba(197, 197, 197, 0.7);
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.teacher > img {
+  width: 600px;
+  padding-left: 300px;
+}
+.teacher > h3 {
+  text-align: center;
+  color: black;
+  user-select: none;
+}
+.teacher > p {
+  text-align: center;
+  font-weight: bold;
+  color: var(--main-color);
+  user-select: none;
+}
+ul.social-links {
+  display: inline-block;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+  padding: 10px 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  transform: rotateZ(80deg);
+  transition: all 0.3s;
+}
+.teacher:hover > ul.social-links {
+  transform: rotateZ(0deg);
+}
+ul.social-links a:link,
+ul.social-links a:visited {
+  font-size: 25px;
+  color: var(--main-color);
+  opacity: 0.5;
+  transition: all 0.3s;
+}
+ul.social-links a:hover {
+  opacity: 1;
+}
+ul.social-links i {
+  margin: 10px 0;
+}
