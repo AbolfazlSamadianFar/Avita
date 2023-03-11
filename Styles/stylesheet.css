@@ -458,6 +458,7 @@ ul#category > li:hover {
 #works-wrapper {
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 40px;
 }
 .work {
   flex-basis: 25%;
@@ -494,7 +495,7 @@ ul#category > li:hover {
   display: inline-block;
   color: rgb(38, 38, 38);
   font-size: 25px;
-  font-family: pinar , sans-serif;
+  font-family: pinar, sans-serif;
   padding: 0px 20px;
   margin: 0;
   position: absolute;
@@ -509,10 +510,8 @@ ul#category > li:hover {
   opacity: 1;
 }
 .txt-work {
-  /* border-right: 3px solid white ; */
   position: absolute;
   top: 50px;
-  /* left: 10px; */
   left: 0;
   display: inline-block;
   padding: 0 10px;
@@ -527,7 +526,6 @@ ul#category > li:hover {
   color: white;
   font-size: 18px;
   padding: 0;
-  /* list-style: 5px; */
   user-select: none;
 }
 .txt-work::after {
@@ -541,7 +539,7 @@ ul#category > li:hover {
   right: -50px;
   top: 50px;
 }
-.work:hover > .txt-work{
+.work:hover > .txt-work {
   left: 10px;
   opacity: 1;
 }
