@@ -563,7 +563,7 @@ section#us-team {
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
-.teacher::after{
+.teacher::after {
   content: "";
   width: 285px;
   height: 100px;
@@ -575,7 +575,7 @@ section#us-team {
   z-index: -1;
   transition: all 0.3s;
 }
-.teacher:hover::after{
+.teacher:hover::after {
   right: 0;
   z-index: -1;
 }
@@ -590,7 +590,7 @@ section#us-team {
   transition: all 0.3s;
   z-index: 0;
 }
-.teacher:hover > h3{
+.teacher:hover > h3 {
   color: white;
 }
 .teacher > p {
@@ -601,7 +601,7 @@ section#us-team {
   transition: all 0.3s;
   z-index: 0;
 }
-.teacher:hover > p{
+.teacher:hover > p {
   color: white;
 }
 ul.social-links {
@@ -623,11 +623,11 @@ ul.social-links a:link,
 ul.social-links a:visited {
   font-size: 25px;
   color: black;
-  opacity: 0.5;
+  opacity: 1;
   transition: all 0.3s;
 }
 ul.social-links a:hover {
-  opacity: 1;
+  opacity: 0.5;
 }
 ul.social-links i {
   margin: 10px 0;
