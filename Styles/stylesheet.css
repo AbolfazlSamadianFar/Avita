@@ -39,7 +39,7 @@
 }
 :root {
   --hover-color: #cb79e1;
-  --main-color: rgb(92, 71, 133);
+  --main-color: #5c4785;
 }
 
 /* ******************************************* */
@@ -683,7 +683,7 @@ section#contact {
   background-color: rgb(234, 234, 234);
 }
 .right-form > input:focus,
-.left-form > input:focus{
+.left-form > input:focus {
   outline: 2px solid var(--main-color);
 }
 #form-wrapper input::placeholder {
@@ -706,7 +706,7 @@ section#contact {
   border-radius: 5px;
   resize: none;
 }
-#message:focus{
+#message:focus {
   outline: 2px solid var(--main-color);
 }
 #message::placeholder {
@@ -728,6 +728,121 @@ section#contact {
   color: white;
   cursor: pointer;
 }
-.btn-form:hover{
+.btn-form:hover {
   background-color: var(--hover-color);
+}
+
+/* section Five , footer section */
+
+footer#footer {
+  padding: 10px 0;
+  background: rgb(92,71,133);
+  background-image: url(../images/footer_bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right center;
+}
+#coulmns-wrapper {
+  display: flex;
+  column-gap: 15px;
+}
+.coulmn {
+  min-height: 50px;
+  flex: 1;
+  font-size: 17px;
+  padding: 10px;
+}
+.footer-logo{
+  width: 200px;
+}
+.footer-txt{
+  color: white;
+  line-height: 2;
+  margin: 35px 0 50px 0;
+}
+ul.social-media{
+  display: flex;
+  justify-content: space-around;
+}
+ul.social-media > li > a:link,
+ul.social-media > li > a:visited {
+  color: white;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+ul.social-media > li > a:hover {
+  background-color: white;
+  color: black;
+}
+.coulmn > h4 {
+  width: 70%;
+  font-family: pinar, sans-serif;
+  font-size: 22px;
+  margin-top: 25px;
+  padding-bottom: 15px;
+  color: white;
+  border-bottom: 1px solid white;
+  position: relative;
+}
+.coulmn > h4::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 3px;
+  background-color: white;
+  margin-top: 20px;
+  position: absolute;
+  top: 19px;
+}
+ul.normal-list > li {
+  margin: 30px 0;
+}
+ul.normal-list > li > a:link,
+ul.normal-list > li > a:visited {
+  color: white;
+  transition: all 0.3s;
+}
+ul.normal-list > li > a:hover {
+  color: white;
+}
+ul.normal-list > li > i {
+  color: white;
+  margin-left: 10px;
+  font-size: 13px;
+}
+.app{
+  width: 230px;
+  display: block;
+  margin-bottom: 10px;
+  background-color: black;
+  border-radius: 14px;
+  opacity: 0.8;
+  transition: all 0.3s;
+}
+.app:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.app:last-child{
+  width: 233px;
+  height: 70px;
+}
+.coulmn:last-child > p{
+ display: inline; 
+ line-height: 3;
+ color: white;
+ background-color: rgb(25, 25, 25);
+ padding: 5px;
+ border-radius: 10px;
+}
+.coulmn:last-child > p:hover{
+  background-color: rgb(36, 36, 36);
+  cursor: pointer;
 }
