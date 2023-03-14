@@ -306,6 +306,7 @@ section#information {
   background-repeat: no-repeat;
   background-position: top right;
   background-size: cover;
+  background-attachment: fixed;
   position: relative;
   z-index: 0;
 }
@@ -562,6 +563,7 @@ section#us-team {
   overflow: hidden;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  z-index: 0;
 }
 .teacher::after {
   content: "";
@@ -845,4 +847,40 @@ ul.normal-list > li > i {
 .coulmn:last-child > p:hover{
   background-color: rgb(36, 36, 36);
   cursor: pointer;
+}
+
+/* section Five , overlay section */
+
+section#overlay {
+  color: rgb(170, 170, 170);
+  background-color: rgb(54, 54, 54);
+  min-height: 80px;
+}
+#overlay > .container {
+  /* display: flex; */
+  /* text-align: center; */
+}
+.designer,
+.copyright {
+  /* flex-basis: 50%; */
+  min-height: 10px;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: bold
+  /* line-height: 3; */
+}
+.designer {
+  /* margin-top: 30px; */
+}
+.designer .fa-heart {
+  color: red;
+  padding: 0 5px;
+}
+.designer > strong {
+  padding: 0 1px;
+}
+.copyright {
+  /* text-align: left; */
+  /* direction: ltr; */
+  /* line-height: 1.5; */
 }
