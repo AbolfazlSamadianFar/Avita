@@ -1,7 +1,7 @@
 @media screen and (max-width: 1200px) {
-    #service-wrapper {
-        column-gap: 15px;
-      }
+  #service-wrapper {
+    column-gap: 15px;
+  }
 }
 @media screen and (max-width: 992px) {
   #logo > img {
@@ -17,9 +17,33 @@
     flex-basis: 48%;
     margin-bottom: 20px;
   }
-  .category-holder{
+  .category-holder {
     width: 70%;
   }
-  .work {
-    flex-basis: 50%;
+  .right-col > img {
+    height: 90px;
   }
+  .left-col > img {
+    height: 70px;
+  }
+  #teacher-wrapper {
+    flex-wrap: wrap;
+    row-gap: 15px;
+  }
+  .teacher {
+    flex: none;
+  }
+  #form-wrapper input::placeholder{
+    font-size: 16px;
+  }
+  #message::placeholder{
+    font-size: 16px;
+  }
+  #coulmns-wrapper{
+    flex-wrap: wrap;
+  }
+  .coulmn{
+    flex: none;
+    flex-basis: 49%;
+  }
+}

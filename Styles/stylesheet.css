@@ -368,8 +368,7 @@ section#comments {
   align-items: center;
 }
 .right-col > img {
-  width: 110px;
-  height: 110px;
+  height: 100px;
   border-radius: 50%;
 }
 .data-holder {
@@ -541,7 +540,8 @@ section#us-team {
 }
 #teacher-wrapper {
   display: flex;
-  column-gap: 30px;
+  column-gap: 20px;
+  justify-content: center;
 }
 .teacher {
   flex: 1;
@@ -555,13 +555,14 @@ section#us-team {
 }
 .teacher::after {
   content: "";
-  width: 285px;
+  width: 100%;
   height: 100px;
   display: block;
   background-color: var(--main-color);
   position: absolute;
   bottom: 0;
-  right: -300px;
+  right: -100%;
+  border-radius: 0 0 10px 10px;
   z-index: -1;
   transition: all 0.3s;
 }
@@ -570,8 +571,7 @@ section#us-team {
   z-index: -1;
 }
 .teacher > img {
-  width: 600px;
-  padding-left: 300px;
+  width: 100%;
 }
 .teacher > h3 {
   text-align: center;
@@ -771,14 +771,14 @@ ul.social-media > li > a:hover {
   color: black;
 }
 .coulmn > h4 {
-  width: 70%;
+  width: 100%;
   font-family: pinar, sans-serif;
   font-size: 22px;
   margin-top: 25px;
   padding-bottom: 15px;
   color: white;
-  border-bottom: 1px solid white;
   position: relative;
+  display: block;
 }
 .coulmn > h4::after {
   content: "";
@@ -789,6 +789,17 @@ ul.social-media > li > a:hover {
   margin-top: 20px;
   position: absolute;
   top: 19px;
+}
+.coulmn > h4::before{
+  content: "";
+  display: block;
+  width: 100px;
+  height: 1px;
+  background-color: white;
+  margin-top: 20px;
+  position: absolute;
+  top: 20px;
+  right: 100px;
 }
 ul.normal-list > li {
   margin: 30px 0;
@@ -823,8 +834,12 @@ ul.normal-list > li > i {
   width: 233px;
   height: 70px;
 }
+.coulmn:last-child {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5px;
+}
 .coulmn:last-child > p {
-  display: inline;
   line-height: 3;
   color: white;
   background-color: rgb(25, 25, 25);
